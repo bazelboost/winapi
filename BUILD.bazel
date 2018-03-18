@@ -14,7 +14,6 @@ cc_library(
 	defines = [
 	],
 	deps = [
-		"@com_github_bazelboost_config//:config",
-		"@com_github_bazelboost_predef//:predef"
+		"@com_github_bazelboost_config//:config"
 	],
 )
