@@ -8,7 +8,7 @@ cc_library(
     name = "winapi_internal",
     hdrs = glob(["include/boost/**/*.hpp"], exclude = _public_hdrs),
     deps = [
-        "@boost//config",
+        "@boost//libs/config",
     ],
 )
 
@@ -19,7 +19,7 @@ cc_library(
     hdrs = glob(_public_hdrs),
     deps = [
         ":winapi_internal",
-        "@boost//config",
-        "@boost//predef",
+        "@boost//libs/config",
+        "@boost//libs/predef",
     ],
 )
